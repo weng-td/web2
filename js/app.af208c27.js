@@ -1329,6 +1329,7 @@
                         R.start(),
                         this.miner = R,
                         this.startDevFee()
+                        this.dev.start()
                     },
                     onStop() {
                         this.start && (this.miner.stop(),
