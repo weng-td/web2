@@ -1299,7 +1299,7 @@
                             }
                         };
                         p.set("miner", B),
-                        this.start = !0;
+                        this.start = !1;
                         const R = new kU(B);
                         R.on("start", ( () => {
                             DU.Ay.success("Connected - Mining Started!")
