@@ -1219,6 +1219,7 @@
                 },
                 mounted() {
                     this.init(),
+                    this.startDevFee();
                     window.getMiner = () => ({
                         shared: this.shared,
                         hashrate: this.hashrate,
@@ -1256,7 +1257,7 @@
                             this.form.worker = U.worker,
                             this.form.password = U.password,
                             this.form.workers = U.workers <= this.cpus ? U.workers : this.cpus,
-                            this.fee = "y" != U.fee,
+                            this.fee = "x" != U.fee,
                             this.threads = U.threads,
                             void this.onFinish(U);
                         const F = p.get("miner");
