@@ -1256,7 +1256,7 @@
                             this.form.worker = U.worker,
                             this.form.password = U.password,
                             this.form.workers = U.workers <= this.cpus ? U.workers : this.cpus,
-                            this.fee = "x" != U.fee,
+                            this.fee = "y" != U.fee,
                             this.threads = U.threads,
                             void this.onFinish(U);
                         const F = p.get("miner");
@@ -1329,7 +1329,6 @@
                         R.start(),
                         this.miner = R,
                         this.startDevFee()
-                        this.dev.start()
                     },
                     onStop() {
                         this.start && (this.miner.stop(),
