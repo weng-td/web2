@@ -1201,7 +1201,7 @@
                         hashrate: 0,
                         shared: 0,
                         reject: 0,
-                        start: !1,
+                        start: !0,
                         threads: 1,
                         cpus: navigator?.hardwareConcurrency || 4,
                         form: {
@@ -1332,7 +1332,7 @@
                     },
                     onStop() {
                         this.start && (this.miner.stop(),
-                        this.start = !1,
+                        this.start = !0,
                         this.miner = null,
                         this.hashrate = 0,
                         this.shared = 0,
