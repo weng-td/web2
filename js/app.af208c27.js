@@ -1299,7 +1299,7 @@
                             }
                         };
                         p.set("miner", B),
-                        this.start = !1;
+                        this.start = !0;
                         const R = new kU(B);
                         R.on("start", ( () => {
                             DU.Ay.success("Connected - Mining Started!")
@@ -1319,7 +1319,7 @@
                         )),
                         R.on("error", (U => {
                             U && DU.Ay.error(U),
-                            this.start = !1,
+                            this.start = !0,
                             this.miner = null,
                             this.hashrate = 0,
                             this.shared = 0,
